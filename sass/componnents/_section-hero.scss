@@ -1,0 +1,51 @@
+.section-hero {
+  background: url('../images/background-photo.jpg') rgba(47, 48, 58, 0.4);
+  max-width: 1600px;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  border: 0px;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding: 200px 0 210px;
+  text-align: center;
+}
+.section-hero__title {
+  color: $invers-titels-color;
+
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 136%;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  margin-bottom: 30px;
+}
+.section-hero__button {
+  background-color: $accent-color;
+  padding: 6px 22px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: $invers-titels-color;
+  box-sizing: border-box;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 187%;
+
+  border: 0px;
+
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
