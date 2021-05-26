@@ -52,15 +52,16 @@ header .container {
   line-height: 114%;
   letter-spacing: 0.02em;
   margin-left: auto;
+}
 
+.header__members {
   &:not(:last-child) {
     margin-right: 50px;
   }
 }
-
 .header__link {
   text-decoration: none;
-  color: $titels-color;
+  color: $text-color;
 
   fill: $text-color;
 

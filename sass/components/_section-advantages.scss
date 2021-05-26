@@ -5,18 +5,18 @@
 .section-advantages__list {
   display: flex;
   list-style: none;
+}
+
+.section-advantages__members {
+  width: 270px;
 
   &:not(:last-child) {
     margin-right: 30px;
   }
 }
 
-.section-advantages__members {
-  width: 270px;
-}
-
 .section-advantages__title {
-  color: $text-color;
+  color: $titels-color;
 
   font-style: normal;
   font-weight: bold;

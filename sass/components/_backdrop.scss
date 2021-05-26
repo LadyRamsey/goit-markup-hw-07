@@ -40,7 +40,7 @@
   line-height: 23px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--main-font-color);
+  color: $titels-color;
   margin-bottom: 12px;
 }
 
@@ -66,6 +66,7 @@
   margin-top: 4px;
   padding-left: 42px;
   outline: none;
+
   .modal-window__lable:hover & {
     border: 1px solid $accent-color;
     border-radius: 4px;
@@ -87,7 +88,7 @@
   position: absolute;
   top: 30px;
   left: 15px;
-  fill: $accent-color;
+  fill: $titels-color;
 
   .modal-window__lable:hover &,
   .modal-window__lable:focus & {

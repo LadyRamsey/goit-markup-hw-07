@@ -25,9 +25,10 @@
   box-sizing: border-box;
   border-radius: 4px;
   transition: $hover-transition-time $hover-animation;
+}
+.section-clients__list:not(:last-child) {
   margin-right: 30px;
 }
-
 .section-clients__logos {
   fill: $icons-color;
 }

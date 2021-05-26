@@ -16,7 +16,9 @@
 .section-join-us__contacts {
   display: flex;
   list-style: none;
+}
 
+.section-join-us__members {
   &:not(:last-child) {
     margin-right: 10px;
   }
