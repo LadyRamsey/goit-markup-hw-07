@@ -76,8 +76,7 @@ header .container {
 .header__logo {
   text-decoration: none;
   color: #2196f3;
-  text-decoration: none;
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
@@ -236,7 +235,7 @@ header .container {
 }
 
 .section-advantages__main-text {
-  color: var(--second-color-for-text);
+  color: #757575;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -311,7 +310,6 @@ header .container {
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
-  text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #fff;
@@ -386,7 +384,6 @@ header .container {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  list-style: none;
 }
 
 .section-team__contacts:not(:last-child) {
@@ -507,7 +504,7 @@ footer .container {
 .footer__logo {
   color: #2196f3;
   text-decoration: none;
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
@@ -720,8 +717,6 @@ footer .container {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   width: 528px;
   padding: 41px 40px 39px 40px;
   background: #fff;
@@ -1000,9 +995,7 @@ footer .container {
 
 .section-works-gallery__card-content {
   padding: 20px 24px;
-  border-bottom: 1px #eeeeee;
-  border-right: 1px #eeeeee;
-  border-left: 1px #eeeeee;
+  border: #eeeeee 0 #eeeeee #eeeeee;
 }
 
 .section-works-gallery__name {
@@ -1050,7 +1043,6 @@ footer .container {
           transform: translatey(100%);
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  position: absolute;
   padding: 63px 24px;
   font-style: normal;
   font-weight: normal;

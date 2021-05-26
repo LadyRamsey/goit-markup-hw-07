@@ -1,4 +1,3 @@
-@import './variables';
 html {
   box-sizing: border-box;
 }
@@ -50,15 +49,3 @@ section {
   padding: 0;
   margin: 0;
 }
-
-@import './components/header';
-@import './components/section-hero';
-@import './components/section-advantages';
-@import './components/section-our-services';
-@import './components/section-team';
-@import './components/section-clients';
-@import './components/footer';
-@import './components/section-join-us';
-@import './components/follow-form';
-@import './components/backdrop';
-@import './components/section-works-gallery';
