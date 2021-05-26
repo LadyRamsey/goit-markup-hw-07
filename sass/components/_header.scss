@@ -61,8 +61,17 @@ header .container {
 }
 .header__link {
   text-decoration: none;
-  color: $text-color;
+  color: $titels-color;
 
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    transition: $hover-transition-time $hover-transition-time;
+  }
+}
+.header__contacts__link {
+  text-decoration: none;
+  color: $text-color;
   fill: $text-color;
 
   &:hover,
@@ -78,7 +87,6 @@ header .container {
     transition: $hover-transition-time $hover-animation;
   }
 }
-
 .current {
   position: relative;
 
