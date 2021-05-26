@@ -979,7 +979,7 @@ footer .container {
   margin-left: 30px;
   margin-top: 30px;
   width: 370px;
-  background: #2f303a;
+  background: 250ms;
 }
 
 .section-works-gallery__members:focus, .section-works-gallery__members:hover {
@@ -995,11 +995,13 @@ footer .container {
 
 .section-works-gallery__card-content {
   padding: 20px 24px;
-  border: #eeeeee 0 #eeeeee #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
 
 .section-works-gallery__name {
-  color: #757575;
+  color: #212121;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -1037,7 +1039,7 @@ footer .container {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #2196f3 33, 150, 243, 0.9;
+  background: rgba(33, 150, 243, 0.9);
   opacity: 0;
   -webkit-transform: translatey(100%);
           transform: translatey(100%);

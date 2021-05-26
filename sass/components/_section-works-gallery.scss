@@ -33,6 +33,7 @@
   padding: 6px 22px;
   margin-right: 8px;
   transition: $hover-transition-time $hover-animation;
+
   &:hover,
   &:focus {
     color: $invers-titels-color;
@@ -54,7 +55,7 @@
   margin-top: 30px;
   width: 370px;
 
-  background: $second-background-color;
+  background: $hover-transition-time;
   &:focus,
   &:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -68,11 +69,13 @@
 .section-works-gallery__card-content {
   padding: 20px 24px;
 
-  border: #eeeeee 0 #eeeeee #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
 
 .section-works-gallery__name {
-  color: $text-color;
+  color: $titels-color;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -111,7 +114,7 @@
   width: 100%;
   height: 100%;
 
-  background: $accent-color(33, 150, 243, 0.9);
+  background: rgba(33, 150, 243, 0.9);
   opacity: 0;
 
   transform: translatey(100%);
