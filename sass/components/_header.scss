@@ -59,6 +59,7 @@ header .container {
     margin-right: 50px;
   }
 }
+
 .header__link {
   text-decoration: none;
   color: $titels-color;
@@ -69,6 +70,7 @@ header .container {
     transition: $hover-transition-time $hover-transition-time;
   }
 }
+
 .header__contacts__link {
   text-decoration: none;
   color: $text-color;

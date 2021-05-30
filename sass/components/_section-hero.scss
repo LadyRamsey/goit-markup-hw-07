@@ -1,17 +1,21 @@
 .section-hero {
   background: url('../images/background-photo.jpg') rgba(47, 48, 58, 0.4);
   max-width: 1600px;
+  min-height: 400px;
 
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 
   border: 0px;
-  margin-left: auto;
   margin-right: auto;
-
+  margin-left: auto;
   padding: 200px 0 210px;
   text-align: center;
+
+  @media screen and (min-wigth: 480px) {
+    width: 480px;
+  }
 }
 
 .section-hero__title {
