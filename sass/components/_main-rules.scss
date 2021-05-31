@@ -34,10 +34,10 @@ img {
   margin-right: auto;
   margin-left: auto;
 
-  @media screen and (min-width: $tablet-width) {
+  @media screen and (max-width: $tablet-width) {
     width: $tablet-width;
   }
-  @media screen and (min-width: $phone-width) {
+  @media screen and (max-width: $phone-width) {
     width: $phone-width;
   }
 }

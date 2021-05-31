@@ -61,7 +61,7 @@
     transition: $hover-transition-time $hover-animation;
   }
 
-  @media screen and (min-width: $phone-width) {
+  @media screen and (max-width: $phone-width) {
     flex-wrap: wrap;
     margin: 0;
     flex-basis: 50%;

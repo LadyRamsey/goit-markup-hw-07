@@ -13,10 +13,10 @@
   text-align: center;
   padding-top: 200px;
 
-  @media screen and (min-width: $tablet-width) {
+  @media screen and (max-width: $tablet-width) {
     width: $tablet-width;
   }
-  @media screen and (min-width: $phone-width) {
+  @media screen and (max-width: $phone-width) {
     width: $phone-width;
     padding-top: 118px;
   }
@@ -37,7 +37,7 @@
 
   margin-bottom: 30px;
 
-  @media screen and (min-width: $phone-width) {
+  @media screen and (max-width: $phone-width) {
     // font-weight: 900;
     font-size: 26px;
     line-height: 162%;

@@ -28,7 +28,7 @@ header .container {
 }
 
 .header__phone-menu {
-  @media screen and (min-width: $phone-width) {
+  @media screen and (max-width: $phone-width) {
     display: none;
   }
 }
@@ -54,7 +54,7 @@ header .container {
   align-items: center;
   justify-items: center;
 
-  @media screen and (min-width: $phone-width) {
+  @media screen and (max-width: $phone-width) {
     display: none;
   }
 }
@@ -76,7 +76,7 @@ header .container {
   letter-spacing: 0.02em;
   margin-left: auto;
 
-  @media screen and (min-width: $phone-width) {
+  @media screen and (max-width: $phone-width) {
     display: none;
   }
 }
@@ -86,7 +86,7 @@ header .container {
     margin-right: 50px;
   }
 
-  @media screen and (min-width: $tablet-width) {
+  @media screen and (max-width: $tablet-width) {
     &:not(:last-child) {
       margin-bottom: 10px;
     }

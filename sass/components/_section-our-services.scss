@@ -1,11 +1,11 @@
 .section-our-services {
   padding: $inside-section-paddings 0px;
 
-  @media screen and (min-width: $phone-width) {
+  @media screen and (max-width: $phone-width) {
     display: none;
   }
 
-  @media screen and (min-width: $tablet-width) {
+  @media screen and (max-width: $tablet-width) {
     display: none;
   }
 }
