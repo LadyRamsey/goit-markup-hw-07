@@ -26,14 +26,14 @@
   border-radius: 4px;
   transition: $hover-transition-time $hover-animation;
 
-  @media screen and (min-width: $phone-width) {
+  @media screen and (max-width: $phone-width) {
     margin: 15px;
   }
 }
 .section-clients__members:not(:last-child) {
   margin-right: 30px;
 
-  @media screen and (min-width: $phone-width) {
+  @media screen and (max-width: $phone-width) {
     &:not(:last-child) {
       margin-right: 0;
     }
