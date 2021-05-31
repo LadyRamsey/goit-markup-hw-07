@@ -5,10 +5,17 @@
   display: flex;
   list-style: none;
 
-  @media screen and (max-width: $phone-width) {
+  @media screen and (min-width: $phone-width) {
     display: block;
     width: 450px;
     text-align: center;
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    flex-basis: 50%;
   }
 }
 
@@ -17,11 +24,21 @@
     margin-right: 30px;
   }
 
-  @media screen and (max-width: $phone-width) {
+  @media screen and (min-width: $phone-width) {
     &:not(:last-child) {
       margin-bottom: 30px;
       margin-right: 0;
     }
+    &:last-child {
+      margin-bottom: 60px;
+    }
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    // &:not(:last-child) {
+    //   margin-bottom: 30px;
+    //   margin-right: 0;
+    // }
     &:last-child {
       margin-bottom: 60px;
     }
