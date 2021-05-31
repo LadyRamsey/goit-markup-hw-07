@@ -1,19 +1,30 @@
 .section-advantages {
   padding-top: $inside-section-paddings;
 }
-
 .section-advantages__list {
   display: flex;
   list-style: none;
 
-  @media screen and (main-wigth: 480) {
+  @media screen and (max-width: $phone-width) {
     display: block;
+    width: 450px;
+    text-align: center;
   }
 }
 
 .section-advantages__members {
   &:not(:last-child) {
     margin-right: 30px;
+  }
+
+  @media screen and (max-width: $phone-width) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+      margin-right: 0;
+    }
+    &:last-child {
+      margin-bottom: 60px;
+    }
   }
 }
 

@@ -6,11 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Студия</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
       integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
-      crossorigin="anonymous"/>
+      crossorigin="anonymous"
+    />
 
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/main.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -22,39 +25,45 @@
     <!-- Хэдер -->
     <header class="header">
       <div class="container">
-        <!-- Навигация по сайту -->
+        <!-- Навигация по сайту -->          
         <nav class="header__nav">
-          <a class="header__logo" href="index.html">Web<span class="header__logo-black">Studio</span></a>
-          <ul class="header__nav-list">
-            <li class="header__nav-members">
-              <a class="header__link current" href="index.html">Студия</a>
+        <a class="header__logo" href="index.html">Web<span class="header__logo-black">Studio</span></a>
+            <ul class="header__nav-list">
+              <li class="header__nav-members">
+                <a class="header__link current" href="index.html">Студия</a>
+              </li>
+              <li class="header__nav-members">
+                <a class="header__link" href="portfolio.html">Портфолио</a>
+              </li>
+              <li class="header__nav-members">
+                <a class="header__link" href="">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="header__contacts">
+            <li class="header__members">
+              <a class="header__contacts__link" href="mailto:info@devstudio.com">
+                <svg class="header__icon" width="16" height="12">
+                  <use href="./images/symbol-defs.svg#icon-icon-mail"></use>
+                </svg>
+                info@devstudio.com
+              </a>
             </li>
-            <li class="header__nav-members">
-              <a class="header__link" href="portfolio.html">Портфолио</a>
+            <li class="header__members">
+              <a class="header__contacts__link" href="tel:+380961111111">
+                <svg class="header__icon" width="12" height="16">
+                  <use href="./images/symbol-defs.svg#icon-icon-phone"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
             </li>
-            <li class="header__nav-members">
-              <a class="header__link" href="">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <ul class="header__contacts">
-          <li class="header__members">
-            <a class="header__contacts__link" href="mailto:info@devstudio.com">
-              <svg class="header__icon" width="16" height="12">
-                <use href="./images/symbol-defs.svg#icon-icon-mail"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="header__members">
-            <a class="header__contacts__link" href="tel:+380961111111">
-              <svg class="header__icon" width="12" height="16">
-                <use href="./images/symbol-defs.svg#icon-icon-phone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+          </ul>         
+        <button type="button" class="header__menu-button is-open" data-menu-button>
+            <svg width="40" height="40" aria-label="Переключатель мобильного меню"> 
+              <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu"></use>
+              <use class="icon-cross" href="./images/symbol-defs.svg#icon-close_icon"></use>
+            </svg>
+          </button>
       </div>
     </header>
 
@@ -202,36 +211,36 @@
               <div class="section-team__text-block">
                 <h3 class="section-team__name">Oльга Репина</h3>
                 <p class="section-team__proffesion">Frontend Developer</p>
-              <ul class="section-team__contacts">
-                <li>
-                  <a href="" class="section-team__link">
-                    <svg class="section-team__icon" width="20" height="20">
-                      <use href="./images/symbol-defs.svg#icon-icon-instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="" class="section-team__link">
-                    <svg class="section-team__icon" width="20" height="20">
-                      <use href="./images/symbol-defs.svg#icon-icon-twiter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="" class="section-team__link">
-                    <svg class="section-team__icon" width="20" height="20">
-                      <use href="./images/symbol-defs.svg#icon-icon-facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li>
-                  <a href="" class="section-team__link">
-                    <svg class="section-team__icon" width="20" height="20">
-                      <use href="./images/symbol-defs.svg#icon-icon-linkedin"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
+                <ul class="section-team__contacts">
+                  <li>
+                    <a href="" class="section-team__link">
+                      <svg class="section-team__icon" width="20" height="20">
+                        <use href="./images/symbol-defs.svg#icon-icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="section-team__link">
+                      <svg class="section-team__icon" width="20" height="20">
+                        <use href="./images/symbol-defs.svg#icon-icon-twiter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="section-team__link">
+                      <svg class="section-team__icon" width="20" height="20">
+                        <use href="./images/symbol-defs.svg#icon-icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="section-team__link">
+                      <svg class="section-team__icon" width="20" height="20">
+                        <use href="./images/symbol-defs.svg#icon-icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </li>
             <li class="section-team__members">
@@ -308,67 +317,67 @@
                 </ul>
               </div>
             </li>
-      </div>
+          </ul>
+        </div>
+      </section>
+
+      <!--ПОСТОЯННЫЕ КЛИЕНТЫ-->
+
+      <section class="section-clients">
+        <div class="container">
+          <h2 class="section-clients__title">Постоянные клиенты</h2>
+          <ul class="section-clients__list">
+            <li class="section-clients__members">
+              <a class="section-clients__link" href="">
+                <svg class="section-clients__logos" width="106" height="60">
+                  <use href="./images/symbol-defs.svg#icon-icon-yaco"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="section-clients__members">
+              <a class="section-clients__link" href="">
+                <svg class="section-clients__logos" width="106" height="60">
+                  <use href="./images/symbol-defs.svg#icon-logo-tagline-here-company"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="section-clients__members">
+              <a class="section-clients__link" href="">
+                <svg class="section-clients__logos" width="106" height="60">
+                  <use href="./images/symbol-defs.svg#icon-logo-just-company"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="section-clients__members">
+              <a class="section-clients__link" href="">
+                <svg class="section-clients__logos" width="106" height="60">
+                  <use href="./images/symbol-defs.svg#icon-logo-foster-peters"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="section-clients__members">
+              <a class="section-clients__link" href="">
+                <svg class="section-clients__logos" width="106" height="60">
+                  <use href="./images/symbol-defs.svg#icon-logo-brand"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="section-clients__members">
+              <a class="section-clients__link" href="">
+                <svg class="section-clients__logos" width="106" height="60">
+                  <use href="./images/symbol-defs.svg#icon-logo-company-tag-line"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
-
-    <!--ПОСТОЯННЫЕ КЛИЕНТЫ-->
-
-    <section class="section-clients">
-      <div class="container">
-        <h2 class="section-clients__title">Постоянные клиенты</h2>
-        <ul class="section-clients__list">
-          <li class="section-clients__list">
-            <a class="section-clients__link" href="">
-              <svg class="section-clients__logos" width="106" height="60">
-                <use href="./images/symbol-defs.svg#icon-icon-yaco"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="section-clients__list">
-            <a class="section-clients__link" href="">
-              <svg class="section-clients__logos" width="106" height="60">
-                <use href="./images/symbol-defs.svg#icon-logo-tagline-here-company"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="section-clients__list">
-            <a class="section-clients__link" href="">
-              <svg class="section-clients__logos" width="106" height="60">
-                <use href="./images/symbol-defs.svg#icon-logo-just-company"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="section-clients__list">
-            <a class="section-clients__link" href="">
-              <svg class="section-clients__logos" width="106" height="60">
-                <use href="./images/symbol-defs.svg#icon-logo-foster-peters"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="section-clients__list">
-            <a class="section-clients__link" href="">
-              <svg class="section-clients__logos" width="106" height="60">
-                <use href="./images/symbol-defs.svg#icon-logo-brand"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="section-clients__list">
-            <a class="section-clients__link" href="">
-              <svg class="section-clients__logos" width="106" height="60">
-                <use href="./images/symbol-defs.svg#icon-logo-company-tag-line"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </section>
-
     <!-- ФУТЕР -->
     <footer class="footer">
       <div class="container">
         <div class="footer__block">
-            <a class="footer__logo" href="index.html">Web<span class="footer__logo-white">Studio</span></a>
+          <a class="footer__logo" href="index.html">Web<span class="footer__logo-white">Studio</span></a>
           <address class="footer__address-block">
             <p class="footer__address">г. Киев, пр-т Леси Украинки, 26</p>
             <p class="mail-footer"><a class="footer__link" href="mailto:info@devstudio.com">info@devstudio.com</a></p>
@@ -421,7 +430,7 @@
               />
               <button class="follow-form__button" type="button">
                 Подписаться
-                <svg class="follow-form__icon" width="18" hight="16">
+                <svg class="follow-form__icon" width="18" height="16">
                   <use href="./images/symbol-defs.svg#icon-icon-send"></use>
                 </svg>
               </button>
@@ -460,9 +469,16 @@
           </svg>
         </label>
 
-        <div class="modal-window__textarea-block">
-          <label class="modal-window__lable" for="textarea"> Комментарий</label>
-          <textarea clas="modal-window__textarea" name="comment" id="comment" cols="30" rows="10" placeholder="Введите текст"></textarea>
+        <div class="modal-window__text-place-block">
+          <label class="modal-window__lable" for="comment"> Комментарий</label>
+          <textarea
+            class="modal-window__text-place"
+            name="comment"
+            id="comment"
+            cols="30"
+            rows="10"
+            placeholder="Введите текст"
+          ></textarea>
         </div>
 
         <label class="modal-window__policy">
@@ -479,7 +495,7 @@
         <button class="modal-window__button-send" type="submit">Отправить</button>
         <button class="modal-window__button-close" type="submit" data-modal-close>
           <svg width="11" height="11">
-            <use href="./images/symbol-defs.svg#icon-icon-close-button"></use>
+            <use href="./images/symbol-defs.svg#icon-close_icon"></use>
           </svg>
         </button>
       </div>

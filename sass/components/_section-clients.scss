@@ -25,9 +25,19 @@
   box-sizing: border-box;
   border-radius: 4px;
   transition: $hover-transition-time $hover-animation;
+
+  @media screen and (max-width: $phone-width) {
+    margin: 15px;
+  }
 }
-.section-clients__list:not(:last-child) {
+.section-clients__members:not(:last-child) {
   margin-right: 30px;
+
+  @media screen and (max-width: $phone-width) {
+    &:not(:last-child) {
+      margin-right: 0;
+    }
+  }
 }
 .section-clients__logos {
   fill: $icons-color;
@@ -49,5 +59,11 @@
     fill: $accent-color;
     border-color: $accent-color;
     transition: $hover-transition-time $hover-animation;
+  }
+
+  @media screen and (max-width: $phone-width) {
+    flex-wrap: wrap;
+    margin: 0;
+    flex-basis: 50%;
   }
 }

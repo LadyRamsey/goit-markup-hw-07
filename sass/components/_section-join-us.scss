@@ -1,6 +1,11 @@
 .section-join-us {
   margin-left: 70px;
   padding: 72px 0 0;
+
+  @media screen and (max-width: $phone-width) {
+    margin-left: 0;
+    padding: 0;
+  }
 }
 
 .section-join-us__title {
@@ -16,6 +21,11 @@
 .section-join-us__contacts {
   display: flex;
   list-style: none;
+
+  @media screen and (max-width: $phone-width) {
+    justify-content: center;
+    margin-bottom: 60px;
+  }
 }
 
 .section-join-us__members {

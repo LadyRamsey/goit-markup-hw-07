@@ -3,6 +3,12 @@
   position: relative;
   padding-top: 72px;
   margin-left: 93px;
+
+  @media screen and (max-width: $phone-width) {
+    margin-left: 0;
+    padding-top: 0;
+    justify-content: center;
+  }
 }
 
 .follow-form__title {
@@ -18,6 +24,12 @@
 
 .follow-form__button-group {
   display: flex;
+  @media screen and (max-width: $phone-width) {
+    display: block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .follow-form__input {
@@ -33,6 +45,12 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   color: $invers-titels-color;
+
+  @media screen and (max-width: $phone-width) {
+    margin-bottom: 20px;
+    left: 0;
+    top: 0;
+  }
 }
 
 .follow-form__button {
@@ -40,17 +58,17 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   padding: 10px 62px;
+
   background: $accent-color;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 187%;
   margin-left: 12px;
+
   padding-left: 29px;
   padding-right: 28px;
 
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   color: $invers-titels-color;
 }

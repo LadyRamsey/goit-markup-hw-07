@@ -97,7 +97,7 @@
   }
 }
 
-.modal-window__textarea-block textarea {
+.modal-window__text-place-block textarea {
   resize: none;
   width: 448px;
   height: 120px;
@@ -119,8 +119,8 @@
   outline: none;
 }
 
-.modal-window__textarea-block textarea:hover,
-.modal-window__textarea-block textarea:focus {
+.modal-window__text-place-block textarea:hover,
+.modal-window__text-place-block textarea:focus {
   border: 1px solid $accent-color;
   transition: $hover-transition-time $hover-animation;
 }

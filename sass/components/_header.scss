@@ -11,6 +11,27 @@ header .container {
   padding: 24px;
 }
 
+.header__menu-button {
+  fill: $second-background-color;
+}
+
+.header__menu-button .icon-cross {
+  display: none;
+}
+
+.header__menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.header__menu-button.is-open .icon-menu {
+  display: none;
+}
+
+.header__phone-menu {
+  @media screen and (max-width: $phone-width) {
+    display: none;
+  }
+}
 .header__nav {
   display: flex;
 }
@@ -19,8 +40,6 @@ header .container {
   text-decoration: none;
   color: $accent-color;
   font-family: $second-font-for-text;
-  font-style: normal;
-  font-weight: bold;
   font-size: 26px;
 
   letter-spacing: 0.03em;
@@ -34,6 +53,10 @@ header .container {
   display: flex;
   align-items: center;
   justify-items: center;
+
+  @media screen and (max-width: $phone-width) {
+    display: none;
+  }
 }
 
 .header__nav-members {
@@ -52,11 +75,21 @@ header .container {
   line-height: 114%;
   letter-spacing: 0.02em;
   margin-left: auto;
+
+  @media screen and (max-width: $phone-width) {
+    display: none;
+  }
 }
 
 .header__members {
   &:not(:last-child) {
     margin-right: 50px;
+  }
+
+  @media screen and (max-width: $tablet-width) {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
   }
 }
 

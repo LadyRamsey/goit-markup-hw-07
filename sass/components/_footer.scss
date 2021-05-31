@@ -4,6 +4,12 @@ footer {
 
 footer .container {
   display: flex;
+  justify-content: center;
+
+  @media screen and (max-width: $phone-width) {
+    display: block;
+    text-align: center;
+  }
 }
 
 .footer__block {

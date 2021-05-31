@@ -10,11 +10,15 @@
   border: 0px;
   margin-right: auto;
   margin-left: auto;
-  padding: 200px 0 210px;
   text-align: center;
+  padding-top: 200px;
 
-  @media screen and (min-wigth: 480px) {
-    width: 480px;
+  @media screen and (max-width: $tablet-width) {
+    width: $tablet-width;
+  }
+  @media screen and (max-width: $phone-width) {
+    width: $phone-width;
+    padding-top: 118px;
   }
 }
 
@@ -22,7 +26,6 @@
   color: $invers-titels-color;
 
   font-style: normal;
-  font-weight: 900;
   font-size: 44px;
   line-height: 136%;
 
@@ -33,6 +36,12 @@
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
   margin-bottom: 30px;
+
+  @media screen and (max-width: $phone-width) {
+    // font-weight: 900;
+    font-size: 26px;
+    line-height: 162%;
+  }
 }
 
 .section-hero__button {

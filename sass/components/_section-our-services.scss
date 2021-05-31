@@ -1,5 +1,13 @@
 .section-our-services {
   padding: $inside-section-paddings 0px;
+
+  @media screen and (max-width: $phone-width) {
+    display: none;
+  }
+
+  @media screen and (max-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .section-our-services__title {
@@ -16,6 +24,7 @@
 .section-our-services__list {
   display: flex;
   list-style: none;
+  justify-content: center;
 }
 
 .section-our-services__img {
