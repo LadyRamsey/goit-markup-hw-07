@@ -28,6 +28,12 @@
         <!-- Навигация по сайту -->
 
         <a class="header__logo" href="index.html">Web<span class="header__logo-black">Studio</span></a>
+        <button type="button" class="header__menu-button" data-menu-button>
+          <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+            <use class="icon-cross" href="./images/symbol-defs.svg#icon-close_icon"></use>
+            <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu"></use>
+          </svg>
+        </button>
         <div class="header__phone-menu">
           <nav class="header__nav">
             <ul class="header__nav-list">
@@ -61,12 +67,6 @@
             </li>
           </ul>
         </div>
-        <!-- <button type="button" class="header__menu-button is-open" data-menu-button>
-            <svg width="40" height="40" aria-label="Переключатель мобильного меню"> 
-              <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu"></use>
-              <use class="icon-cross" href="./images/symbol-defs.svg#icon-close_icon"></use>
-            </svg>
-          </button> -->
       </div>
     </header>
 
@@ -504,5 +504,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

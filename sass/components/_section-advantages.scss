@@ -6,10 +6,6 @@
 }
 .section-advantages__list {
   list-style: none;
-
-  @media screen and (max-width: $phone-width) {
-    text-align: center;
-  }
   @media screen and (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
@@ -21,7 +17,7 @@
   &:last-child {
     margin-bottom: 60px;
   }
-  @media screen and (min-width: $tablet-width) {
+  @media screen and (max-width: $tablet-width) {
     text-align: center;
   }
   @media screen and (min-width: $tablet-width) {

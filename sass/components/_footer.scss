@@ -18,6 +18,7 @@ footer .container {
 }
 
 .footer__logo {
+  display: block;
   color: $accent-color;
   text-decoration: none;
   font-family: $second-font-for-text;
@@ -28,23 +29,25 @@ footer .container {
 
   letter-spacing: 0.03em;
   padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .footer__logo-white {
   color: $invers-titels-color;
 }
 
+.footed__block {
+  display: inline-flex;
+}
+
 .footer__address-block {
   &:last-child {
     margin-bottom: 60px;
   }
-
-  &:first-child {
-    margin-top: 20px;
-  }
 }
 
 .footer__address {
+  display: block;
   font-style: normal;
   font-weight: normal;
   color: $invers-titels-color;
@@ -52,6 +55,8 @@ footer .container {
   line-height: 171%;
 
   letter-spacing: 0.03em;
+
+  margin-bottom: 8px;
 
   &:last-child {
     margin-bottom: 60px;
@@ -59,13 +64,14 @@ footer .container {
 }
 
 .footer__link {
+  display: block;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 171%;
 
   letter-spacing: 0.03em;
-
+  margin-bottom: 8px;
   color: $text-color;
   &:hover,
   &:focus {

@@ -4,15 +4,17 @@ header {
 
 header .container {
   display: flex;
+  position: relative;
   background-color: $main-background-color;
-
   align-items: center;
-
-  padding: 24px;
+  height: 80px;
 }
 
 .header__menu-button {
   fill: $second-background-color;
+  @media screen and (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .header__menu-button .icon-cross {
@@ -29,7 +31,27 @@ header .container {
 
 .header__phone-menu {
   display: none;
+  @media screen and (max-width: $phone-width) {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: center;
+    letter-spacing: 0.02em;
 
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 500px;
+
+    background-color: $main-background-color;
+  }
+
+  &.is-open {
+    display: block;
+  }
   @media screen and (min-width: $tablet-width) {
     display: flex;
   }
@@ -43,8 +65,12 @@ header .container {
   color: $accent-color;
 
   font-family: $second-font-for-text;
-  font-size: 26px;
+  font-size: 24px;
   letter-spacing: 0.03em;
+
+  @media screen and (min-wight: $desktop-width) {
+    font-size: 26px;
+  }
 }
 
 .header__logo-black {
@@ -63,14 +89,16 @@ header .container {
 .header__nav-members {
   list-style: none;
 
-  margin-left: 50px;
+  @media screen and(min-width: $tablet-width) {
+    margin-left: 50px;
+    justify-content: space-between;
+    &:first-child {
+      margin-left: 88px;
+    }
 
-  &:first-child {
-    margin-left: 88px;
-  }
-
-  &:last-child {
-    margin-right: 84px;
+    &:last-child {
+      margin-right: 84px;
+    }
   }
 
   @media screen and (min-width: $desktop-width) {
@@ -87,20 +115,27 @@ header .container {
 }
 
 .header__contacts {
-  list-style: none;
-  position: relative;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 114%;
-  letter-spacing: 0.02em;
-  margin-left: auto;
+  @media screen and (min-width: $tablet-width) {
+    list-style: none;
+    position: relative;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 114%;
+    letter-spacing: 0.02em;
+    margin-left: auto;
+  }
 
   @media screen and (min-width: $desktop-width) {
     display: flex;
+    font-size: 14px;
   }
 }
-
+.header__icon {
+  @media screen and (max-width: $tablet-width) {
+    display: none;
+  }
+}
 .header__members {
   &:not(:last-child) {
     margin-bottom: 10px;
@@ -143,18 +178,20 @@ header .container {
   }
 }
 .current {
-  position: relative;
+  @media screen and(min-width:$tablet-width) {
+    position: relative;
 
-  &::after {
-    display: block;
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -31px;
+    &::after {
+      display: block;
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -31px;
 
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    background: $accent-color;
+      width: 100%;
+      height: 4px;
+      border-radius: 2px;
+      background: $accent-color;
+    }
   }
 }
