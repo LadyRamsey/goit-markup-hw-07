@@ -1,7 +1,6 @@
 .section-hero {
   background: url('../images/background-photo.jpg') rgba(47, 48, 58, 0.4);
   max-width: 1600px;
-  min-height: 400px;
 
   background-repeat: no-repeat;
   background-size: cover;
@@ -11,14 +10,12 @@
   margin-right: auto;
   margin-left: auto;
   text-align: center;
-  padding-top: 200px;
 
-  @media screen and (max-width: $tablet-width) {
-    width: $tablet-width;
-  }
-  @media screen and (max-width: $phone-width) {
-    width: $phone-width;
-    padding-top: 118px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+
+  @media screen and (min-width: $desktop-width) {
+    padding-top: 200px;
   }
 }
 
@@ -26,9 +23,9 @@
   color: $invers-titels-color;
 
   font-style: normal;
-  font-size: 44px;
-  line-height: 136%;
-
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 162%;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -37,10 +34,9 @@
 
   margin-bottom: 30px;
 
-  @media screen and (max-width: $phone-width) {
-    // font-weight: 900;
-    font-size: 26px;
-    line-height: 162%;
+  @media screen and (max-width: $tablet-width) {
+    font-size: 44px;
+    line-height: 136%;
   }
 }
 

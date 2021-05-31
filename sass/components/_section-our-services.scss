@@ -1,11 +1,7 @@
 .section-our-services {
   padding: $inside-section-paddings 0px;
 
-  @media screen and (max-width: $phone-width) {
-    display: none;
-  }
-
-  @media screen and (max-width: $tablet-width) {
+  @media screen and (max-width: $desktop-width) {
     display: none;
   }
 }

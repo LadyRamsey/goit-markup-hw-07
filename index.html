@@ -25,9 +25,11 @@
     <!-- Хэдер -->
     <header class="header">
       <div class="container">
-        <!-- Навигация по сайту -->          
-        <nav class="header__nav">
+        <!-- Навигация по сайту -->
+
         <a class="header__logo" href="index.html">Web<span class="header__logo-black">Studio</span></a>
+        <div class="header__phone-menu">
+          <nav class="header__nav">
             <ul class="header__nav-list">
               <li class="header__nav-members">
                 <a class="header__link current" href="index.html">Студия</a>
@@ -57,13 +59,14 @@
                 +38 096 111 11 11
               </a>
             </li>
-          </ul>         
-        <button type="button" class="header__menu-button is-open" data-menu-button>
+          </ul>
+        </div>
+        <!-- <button type="button" class="header__menu-button is-open" data-menu-button>
             <svg width="40" height="40" aria-label="Переключатель мобильного меню"> 
               <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu"></use>
               <use class="icon-cross" href="./images/symbol-defs.svg#icon-close_icon"></use>
             </svg>
-          </button>
+          </button> -->
       </div>
     </header>
 
@@ -383,42 +386,42 @@
             <p class="mail-footer"><a class="footer__link" href="mailto:info@devstudio.com">info@devstudio.com</a></p>
             <p class="tel-footer"><a class="footer__link" href="tel:+380961111111">+38 096 111 11 11</a></p>
           </address>
-        </div>
-        <div class="section-join-us">
-          <p class="section-join-us__title">ПРИСОЕДИНЯЙТЕСЬ</p>
-          <ul class="section-join-us__contacts">
-            <li class="section-join-us__members">
-              <a class="section-join-us__link" href="">
-                <svg class="section-join-us__icon" width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="section-join-us__members">
-              <a class="section-join-us__link" href="">
-                <svg class="section-join-us__icon" width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-icon-twiter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="section-join-us__members">
-              <a class="section-join-us__link" href="">
-                <svg class="section-join-us__icon" width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="section-join-us__members">
-              <a class="section-join-us__link" href="">
-                <svg class="section-join-us__icon" width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          <div class="section-join-us">
+            <p class="section-join-us__title">ПРИСОЕДИНЯЙТЕСЬ</p>
+            <ul class="section-join-us__contacts">
+              <li class="section-join-us__members">
+                <a class="section-join-us__link" href="">
+                  <svg class="section-join-us__icon" width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="section-join-us__members">
+                <a class="section-join-us__link" href="">
+                  <svg class="section-join-us__icon" width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-icon-twiter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="section-join-us__members">
+                <a class="section-join-us__link" href="">
+                  <svg class="section-join-us__icon" width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="section-join-us__members">
+                <a class="section-join-us__link" href="">
+                  <svg class="section-join-us__icon" width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="follow-form">
-          <form action="">
+          <form>
             <p class="follow-form__title">Подпишитесь на рассылку</p>
             <div class="follow-form__button-group">
               <input

@@ -3,7 +3,9 @@
   border: 0px;
   padding: $inside-section-paddings 0px;
 }
-
+.section-team .container {
+  padding: 0;
+}
 .section-team__title {
   font-style: normal;
   font-weight: bold;
@@ -16,35 +18,31 @@
 }
 
 .section-team__list {
-  display: flex;
+  display: block;
   list-style: none;
   justify-content: center;
 
-  @media screen and (max-width: $phone-width) {
-    display: block;
+  @media screen and (min-width: $phone-width) {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
 .section-team__members {
   background-color: $main-background-color;
+  margin: $inside-section-margin;
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 
-  &:not(:first-child) {
-    margin-left: 30px;
+  @media screen and (min-width: $tablet-width) {
+    flex-basis: calc(100% / 2 - 30px);
   }
-
-  @media screen and (max-width: $phone-width) {
-    margin-left: 0;
-
-    &:not(:first-child) {
-      margin-left: 0;
-    }
-
-    & img {
-      width: 100%;
-    }
+  @media screen and (min-width: $desktop-width) {
+    flex-basis: calc(100% / 4 - 30px);
+  }
+  & img {
+    width: 100%;
   }
 }
 
@@ -104,7 +102,7 @@
     fill: $main-background-color;
   }
 
-  @media screen and (max-width: $phone-width) {
+  @media screen and (min-width: $phone-width) {
     margin-bottom: 30px;
   }
 }

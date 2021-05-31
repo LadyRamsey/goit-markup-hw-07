@@ -28,8 +28,10 @@ header .container {
 }
 
 .header__phone-menu {
-  @media screen and (max-width: $phone-width) {
-    display: none;
+  display: none;
+
+  @media screen and (min-width: $tablet-width) {
+    display: flex;
   }
 }
 .header__nav {
@@ -39,9 +41,9 @@ header .container {
 .header__logo {
   text-decoration: none;
   color: $accent-color;
+
   font-family: $second-font-for-text;
   font-size: 26px;
-
   letter-spacing: 0.03em;
 }
 
@@ -50,25 +52,43 @@ header .container {
 }
 
 .header__nav-list {
-  display: flex;
   align-items: center;
   justify-items: center;
 
-  @media screen and (max-width: $phone-width) {
-    display: none;
+  @media screen and (min-width: $tablet-width) {
+    display: flex;
   }
 }
 
 .header__nav-members {
   list-style: none;
-  margin-left: 90px;
+
+  margin-left: 50px;
+
+  &:first-child {
+    margin-left: 88px;
+  }
+
+  &:last-child {
+    margin-right: 84px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    margin-left: 90px;
+
+    &:first-child {
+      margin-left: 93px;
+    }
+
+    // &:last-child {
+    //   margin-right: 331px;
+    // }
+  }
 }
 
 .header__contacts {
-  display: flex;
-  align-items: flex-end;
   list-style: none;
-
+  position: relative;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -76,19 +96,19 @@ header .container {
   letter-spacing: 0.02em;
   margin-left: auto;
 
-  @media screen and (max-width: $phone-width) {
-    display: none;
+  @media screen and (min-width: $desktop-width) {
+    display: flex;
   }
 }
 
 .header__members {
   &:not(:last-child) {
-    margin-right: 50px;
+    margin-bottom: 10px;
   }
 
-  @media screen and (max-width: $tablet-width) {
+  @media screen and (min-width: $desktop-width) {
     &:not(:last-child) {
-      margin-bottom: 10px;
+      margin-right: 50px;
     }
   }
 }

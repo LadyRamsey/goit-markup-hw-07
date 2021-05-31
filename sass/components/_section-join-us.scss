@@ -1,8 +1,7 @@
 .section-join-us {
-  margin-left: 70px;
-  padding: 72px 0 0;
-
-  @media screen and (max-width: $phone-width) {
+  margin: 60px;
+  @media screen and (min-width: $tablet-width) {
+    display: flex;
     margin-left: 0;
     padding: 0;
   }
@@ -10,6 +9,7 @@
 
 .section-join-us__title {
   color: $invers-titels-color;
+
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -21,9 +21,13 @@
 .section-join-us__contacts {
   display: flex;
   list-style: none;
+  justify-content: center;
 
   @media screen and (max-width: $phone-width) {
     justify-content: center;
+  }
+
+  @media screen and (min-width: $phone-width) {
     margin-bottom: 60px;
   }
 }
