@@ -28,13 +28,8 @@
         <!-- Навигация по сайту -->
 
         <a class="header__logo" href="index.html">Web<span class="header__logo-black">Studio</span></a>
-        <button type="button" class="header__menu-button" data-menu-button>
-          <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-            <use class="icon-cross" href="./images/symbol-defs.svg#icon-close_icon"></use>
-            <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu"></use>
-          </svg>
-        </button>
-        <div class="header__phone-menu">
+
+        <div class="header__phone-menu is-hidden" id="mobile-menu" data-menu>
           <nav class="header__nav">
             <ul class="header__nav-list">
               <li class="header__nav-members">
@@ -66,7 +61,25 @@
               </a>
             </li>
           </ul>
+          <ul class="phone-menu__social-link">
+            <li class="phone-menu__social-link"><a href=""></a>Instagram</li>
+            <li class="phone-menu__social-link"><a href=""></a>Twitter</li>
+            <li class="phone-menu__social-link"><a href=""></a>Facebook</li>
+            <li class="phone-menu__social-link"><a href=""></a>LinkedIn</li>
+          </ul>
         </div>
+        <button
+          type="button"
+          class="header__menu-button"
+          data-menu-button
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+            <use class="icon-cross" href="./images/symbol-defs.svg#icon-icon-cross"></use>
+            <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -385,7 +398,7 @@
             <p class="footer__address">г. Киев, пр-т Леси Украинки, 26</p>
             <p class="mail-footer"><a class="footer__link" href="mailto:info@devstudio.com">info@devstudio.com</a></p>
             <p class="tel-footer"><a class="footer__link" href="tel:+380961111111">+38 096 111 11 11</a></p>
-          </address>
+          </address></div>
           <div class="section-join-us">
             <p class="section-join-us__title">ПРИСОЕДИНЯЙТЕСЬ</p>
             <ul class="section-join-us__contacts">
@@ -419,7 +432,7 @@
               </li>
             </ul>
           </div>
-        </div>
+        
         <div class="follow-form">
           <form>
             <p class="follow-form__title">Подпишитесь на рассылку</p>

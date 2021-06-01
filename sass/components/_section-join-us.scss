@@ -1,11 +1,20 @@
 .section-join-us {
+  display: flex;
+  flex-direction: column;
   margin: 60px;
+  outline: 1px solid greenyellow;
+
   @media screen and (min-width: $tablet-width) {
     display: flex;
-    flex-direction: column;
-    text-align: start;
-    margin-left: 0;
+    text-align: center;
+    margin: 0;
+    margin-top: 5px;
+    margin-left: 165px;
     padding: 0;
+  }
+  @media screen and (min-width: $desktop-width) {
+    align-items: start;
+    margin-top: 12px;
   }
 }
 
