@@ -4,7 +4,6 @@ header {
 
 header .container {
   display: flex;
-  position: relative;
   background-color: $main-background-color;
   align-items: center;
   height: 80px;
@@ -101,12 +100,10 @@ header .container {
 
 .header__nav-members {
   list-style: none;
+  text-align: center;
+  align-items: center;
   margin-bottom: 32px;
   color: $titels-color;
-
-  &:last-child {
-    margin-bottom: 306px;
-  }
 
   @media screen and(min-width: $tablet-width) {
     margin-left: 50px;
@@ -249,7 +246,7 @@ header .container {
       content: '';
       position: absolute;
       left: 0;
-      bottom: -31px;
+      bottom: -35px;
 
       width: 100%;
       height: 4px;

@@ -17,6 +17,12 @@
   @media screen and (min-width: $desktop-width) {
     padding-top: 200px;
   }
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .section-hero {
+      background-image: url('../images/background-photo-x2.jpg');
+    }
+  }
 }
 
 .section-hero__title {
